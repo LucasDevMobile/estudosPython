@@ -1,0 +1,1 @@
+#faca um algoritimo q leia um preco e mostre 5% de desconto
