@@ -1,0 +1,1 @@
+#faca um programa q leia a altura e largura de uma parede em metros,calcule sua area e a quantidade de tinta necessaria,cada lt de tinta pinta 2m2

@@ -1,0 +1,1 @@
+#faca um algoritimo q leia o salario de alguem e mostre seu novo salario com aumento de 15%

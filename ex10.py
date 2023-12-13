@@ -1,0 +1,1 @@
+#crie um programa q leia quanto dinheiro a pessoa tem e mostra qts dolares pode comprar DOLAR 3,27

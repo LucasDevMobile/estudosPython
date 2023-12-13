@@ -1,0 +1,1 @@
+#desenvolva um programa q leia as duas notas de um aluno calcule e mostre sua media
