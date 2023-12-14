@@ -1,5 +1,0 @@
-n=input('digite algo')
-print('eh numerico',n.isalnum())
-print('eh alfabetico',n.isalpha())
-print('eh minuscula',n.islower())
-print('alfa numerico',n.isalnum())
