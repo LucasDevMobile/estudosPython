@@ -2,4 +2,5 @@
 
 preco=int(input('Preco do produto'))
 desconto=(preco-(preco*0.05))
+
 print('O valor com desconto e {} reais'.format(desconto))
