@@ -2,7 +2,7 @@
 #Exemplo: Ana Maria de Souza
 #primeiro = ana     ultimo = souza
 
-nome=input('Digite seu nome completo ')
+nome=str(input('Digite seu nome completo ')).strip()
 
 nomecom=nome.split()
 primeiro_nome=nomecom[0]

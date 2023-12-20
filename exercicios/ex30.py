@@ -1,0 +1,1 @@
+# Crie um programa q leia um numero e mostre na tela se ele eh par ou impar
