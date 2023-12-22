@@ -13,6 +13,6 @@ def verificar_triangulo(a, b, c):
 
 # Verificação e exibição do resultado
 if verificar_triangulo(a, b, c):
-    print("É possível formar um triângulo com essas retas.")
+    print("É possível formar um triângulo com essas retas. ")
 else:
-    print("Não é possível formar um triângulo com essas retas.")
+    print("Não é possível formar um triângulo com essas retas. ")

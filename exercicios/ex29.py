@@ -2,15 +2,13 @@
 # Se ele ultrapassar 80km/h,mostre uma mensagem dizendo q ele foi multado
 # A multa vai custar R$ 7.00 por cada km acima do limite
 
-vel=int(input('Velocidade do carro '))
+vel=float(input('Velocidade do carro '))
 
-multaKm = 7
-limite = 80
-kmUltrapassado = vel-limite
 
-if vel > limite:
+if vel > 80:
    
-    valorMulta = (kmUltrapassado*multaKm)
+    valorMulta = (vel-80)*7
 
     print('Voce foi multado')
     print('O valor da multa foi {:.2f} reais'.format(valorMulta))
+else: print('Tenha um bom dia, dirija com seguranca ')
