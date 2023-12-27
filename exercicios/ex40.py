@@ -1,0 +1,2 @@
+#escreva um programa que leia duas notas de alunos e calcule sua media,mostrando uma msg de acordo com a media 
+#media abaixo de 5.0 reprovado, media entre 5.0 e 6.9 recuperacao, media 7.0 ou superior aprovado

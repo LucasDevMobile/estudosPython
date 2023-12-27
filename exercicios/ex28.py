@@ -3,7 +3,7 @@
 from random import randint
 from time import sleep
 
-computador=randint(0,1)
+computador=randint(0,5)
 print('Estou pensando em um numero de 0 a 5, tente adivinhar '.upper())
 jogador=int(input('Em que numero pensei? '))
 print('Processando...')
