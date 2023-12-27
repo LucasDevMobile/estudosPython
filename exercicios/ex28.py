@@ -3,12 +3,16 @@
 from random import randint
 from time import sleep
 
-computador=randint(0,1)
+computador=randint(0,5)
 print('Estou pensando em um numero de 0 a 5, tente adivinhar '.upper())
+print('')
 jogador=int(input('Em que numero pensei? '))
+print('')
 print('Processando...')
 sleep(2)
+print('')
 if jogador == computador:
     print('Parabens voce ganhou!'.upper())
 else:
     print('VOCE PERDEU, eu pensei no numero {} e nao {}'.format(computador,jogador))
+    
