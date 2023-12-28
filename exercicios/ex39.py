@@ -2,7 +2,7 @@
 #se ele ainda vai se alistar no exercito, se eh a hora de se alistar, se ja passou do tempo de alistamento
 #seu programa tambem devera mostrar o tempo que falta ou q passou do prazo
 from datetime import date
-
+print('')
 ano=int(input('Em que ano voce nasceu? '))
 ano=date.today().year-ano
 falta=18-ano
