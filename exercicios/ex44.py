@@ -7,10 +7,10 @@
 produto= float(input('Qual o valor do produto? '))
 forma=int(input("""Qual a forma de pagamento?
                   
-Digite 1 para dinheiro ou cheque a vista
-Digite 2 cartao a vista
-Digite 3 para parcelar em 2x no cartao
-Dogite 4 para parcelar em 3x ou mais no cartao: """))
+[1] Para dinheiro ou cheque a vista
+[2] Para cartao a vista
+[3] Para parcelar em 2x no cartao
+[4] Para parcelar em 3x ou mais no cartao: """))
 
 
 
@@ -19,7 +19,7 @@ if forma==1:
     f1=produto-(produto*10)/100
     print('O valor total sera R$ {}'.format(f1))
 
-if forma==2:
+elif forma==2:
     f2=produto-(produto*5)/100
     print('O valor total sera R$ {}'.format(f2))
 

@@ -1,18 +1,10 @@
 # Crie um programa q leia o comprimento de tres retas e diga se pode ou nao formar um triangulo
 
-a = float(input("Digite o comprimento da primeira reta: "))
-b = float(input("Digite o comprimento da segunda reta: "))
-c = float(input("Digite o comprimento da terceira reta: "))
+r1= float(input('Primeiro segmento '))
+r2= float(input('Segundo segmento '))
+r3= float(input('Terceiro segmento '))
 
-def verificar_triangulo(a, b, c):
-    if a < b + c and b < a + c and c < a + b:
-        return True
-    else:
-        return False
-
-
-# Verificação e exibição do resultado
-if verificar_triangulo(a, b, c):
-    print("É possível formar um triângulo com essas retas. ")
+if r1< r2 + r3 and r2< r1 + r3 and r3< r1 + r2:
+    print('Os segmentos podem formar um triangulo ')
 else:
-    print("Não é possível formar um triângulo com essas retas. ")
+    print('Os segmentos nao podem formar um triangulo ')

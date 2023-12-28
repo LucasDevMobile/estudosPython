@@ -1,22 +1,55 @@
 #escreva um programa que faca o computador jogar jokenpo com vc
 from random import randint
+from time import sleep
 
 print('')
-jogador=int(input('Digite 1 para pedra, 2 para papel ou 3 para tesoura: '))
+itens= ('PEDRA','PAPEL','TESOURA')
+computador=randint(0,2)
 
-computador= randint(1,3.)
+print('''Suas opcoes:
+[0] PEDRA
+[1] PAPEL
+[2] TESOURA''')
 
-if jogador==1 and computador==3:
-    print('Ganhou')
-elif jogador==1 and computador==2:
-    print('Perdeu')
-elif jogador==2 and computador==3:
-    print('Perdeu')
-elif jogador==2 and computador==1:
-    print('Venceu')
-elif jogador==3 and computador==2:
-    print('Venceu')
-elif jogador==3 and computador==1:
-    print('Perdeu')
-else:print('Empate')
-print('Eu escolhi',computador)
+jogador=int(input('Qual eh a sua jogada? '))
+print('JO')
+sleep(1)
+print('KEN')
+sleep(1)
+print('PO!!!')
+sleep(1)
+print('-='*12)
+print('Jogador jogou {} '.format(itens[jogador]))
+print('Computador jogou {} '.format(itens[computador]))
+print('-='*12)
+
+if computador ==0:
+    if jogador==0:
+        print('EMPATE')
+    elif jogador==1:
+        print('JOGADOR VENCEU')
+    elif jogador==2:
+        print('COMPUTADOR VENCEU')
+    else: print('Jogada invalida')
+    
+elif computador==1:
+    if jogador==0:
+        print('COMPUTADOR VENCEU')
+    elif jogador==1:
+         print('EMPATE')
+    elif jogador==2:
+        print('JOGADOR VENCEU')
+    else: print('Jogada invalida')
+    
+elif computador==2:
+    if jogador==0:
+        print('JOGADOR VENCEU')
+    elif jogador==1:
+         print('COMPUTADOR VENCEU')
+    elif jogador==2:
+        print('EMPATE')
+    else: print('Jogada invalida')
+    
+
+
+
