@@ -23,6 +23,7 @@ print('Jogador jogou {} '.format(itens[jogador]))
 print('Computador jogou {} '.format(itens[computador]))
 print('-='*12)
 
+    
 if computador ==0:
     if jogador==0:
         print('EMPATE')
