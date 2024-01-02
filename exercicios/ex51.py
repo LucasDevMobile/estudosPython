@@ -1,0 +1,1 @@
+#desenvolva um programa q leia o primeiro termo e a razao de uma P.A no final mostre os 10 primeiros termos
