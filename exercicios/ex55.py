@@ -1,0 +1,1 @@
+#faca um programa q leia o peso de cinco pessoas,no final mostre qual foi maior e menor peso
