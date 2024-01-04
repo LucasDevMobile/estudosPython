@@ -44,7 +44,7 @@ elif computador==1:
     
 elif computador==2:
     if jogador==0:
-        print('JOGADOR VENCEU')
+        print('OGADOR VENCEU')
     elif jogador==1:
          print('COMPUTADOR VENCEU')
     elif jogador==2:
