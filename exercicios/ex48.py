@@ -1,8 +1,9 @@
 #faca um programa q calcule a soma entre tds numeros impares multiplos de 3 entre 1 e 500
 soma=0
-for c in range(1,499,3):
+cont=0
+for c in range(1,501,2):
+    if c % 3==0:
+        soma=soma+c
+        cont=cont+1
 
-    print(c+2)
-    
-    soma=soma+c
-print('A soma dos numeros eh {}'.format(soma))
+print('A soma de todos os {} valores solicitados eh {}'.format(cont,soma))
