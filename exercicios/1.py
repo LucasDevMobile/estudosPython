@@ -9,6 +9,7 @@ numero1=int(input('Dgite o primeiro valor: '))
 numero2=int(input('Digite o segundo valor: '))
 print('')
 
+
 print('''
  [1] somar
  [2] multiplicar
@@ -18,7 +19,9 @@ print('''
 print('')
 
 pessoa=int(input('O que deseja fazer com esses valores? '))
-print('')
+maior=numero1>numero2
+maior2=numero2>numero1
+
 if pessoa == 1:
     print('O resultado da soma dos valores eh {}'.format(numero1+numero2))
 elif pessoa == 2:
@@ -41,7 +44,7 @@ while pessoa == 4:
  [5] sair do programa''')
 
     pessoa=int(input('O que deseja fazer com esses valores? '))
- 
+   
     if pessoa == 1:
         print('O resultado da soma dos valores eh {}'.format(numero1+numero2))
     elif pessoa == 2:
@@ -52,7 +55,6 @@ while pessoa == 4:
         else:print('O numero {} eh maior que  o numero {}'.format(numero2,numero1))
     elif pessoa ==5:
         print('Voce fechou o programa')
-print('FIM')
     
     
 
