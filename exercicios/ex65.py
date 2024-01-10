@@ -1,23 +1,29 @@
 #crie um programa q leia varios numeros inteiros,no final mostre a media entre eles e qual maior e menor
 #o programa deve perguntar se o usuario quer ou nao digitar mais numeros
 
-cont = 0
-soma = 0
+resposta='S'
+soma=0
+quantidade=0
+media=0
+maior=0
+menor=0
 
-while True:
-    num = int(input('Digite um numero inteiro: '))
-    cont += 1
-    soma += num
+while resposta in 'Ss':
+    num=int(input('Digite um numero:'))
+    soma=soma+num
+    quantidade=quantidade+1
+    if quantidade==1:
+        maior=menor=num
+    else:
+        if num>maior:
+            maior=num
+        if num < menor:
+            menor=num
     
-    num2 = int(input('Você deseja continuar? Digite 1 para sim e 2 para não: '))
-    
-    if num2 != 1:
-        break
-
-media = soma / cont
-print(f'A média dos números digitados é: {media}')
-
-
+    resposta= str(input('Quer continuar? [S/N] ')).upper().strip() [0]
+media=soma/num
+print('Voce digitou {} numeros e a media foi {}'.format(quantidade,media))
+print('O maior valor foi {} e o menor valor foi {}'.format(maior,menor))
 
   
    

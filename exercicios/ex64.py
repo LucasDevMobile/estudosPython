@@ -9,4 +9,4 @@ while num != 999:
     num=int(input('Digite um numero inteiro: '))
     cont=cont+1
     sum=sum+num
-print('A quantidade de numeros digitados foi {} e a soma entre eles eh {} '.format(cont,sum-999))   
+print('A quantidade de numeros digitados foi {} e a soma entre eles eh {} '.format(cont,sum-999))   0
