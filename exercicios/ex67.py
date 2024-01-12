@@ -15,7 +15,7 @@ while True:
         resultado = numero * multiplicador
         print(f"{numero} x {multiplicador} = {resultado}")      # loop secundario executa tudo q esta dentro e para no multiplicador 11 pq a tabuada vai ate 10
         print('')                                               # esse break soh para o loop secundario, depois disso volta pro loop principal executando tudo novamente
-
+                                                                
         # Incrementa o multiplicador
         multiplicador += 1
 
