@@ -3,19 +3,14 @@
 
 from random import randint
 
-# Lista para armazenar os 5 números aleatórios
-numeros = [randint(1, 100) for _ in range(5)]
 
-# Exibe os números antes de ordenar
-print("Números antes de ordenar:", numeros)
+numeros = [randint(1, 100) for c in range(5)]
 
-# Ordena a lista
-numeros_ordenados = sorted(numeros)
+print(f'Lista de numeros {numeros}')
 
-# Exibe os números ordenados
-print("Números ordenados:", numeros_ordenados)
+tupla = sorted(numeros)
 
-print(f'O maior numero eh {numeros_ordenados[4]} e o menor numero eh {numeros_ordenados[0]}')
+print(f'O maior numero eh {tupla[4]} e o menor numero eh {tupla[0]}')
 
 
 
