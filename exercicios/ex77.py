@@ -7,4 +7,4 @@ for palavra in tupla:
     for letra in palavra:
         if letra.lower() in vogais:
             print(letra, end=' ')
-    print()  # Pular para a próxima linha após imprimir as vogais de uma palavra
+    print()  
