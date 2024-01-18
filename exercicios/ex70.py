@@ -1,7 +1,7 @@
 #Crie um programa q leia o nome e o preco de varios produtos,perguntar se quer continuar
 #mostrar total gasto,qts produtos custam mais de 1000,nome do produto mais barato
 
-total = maismil =0
+total = maismil =0 
 barato=None
 print('')
 print('-='*7)

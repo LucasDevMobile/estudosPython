@@ -7,7 +7,7 @@ numext= ('Zero', 'Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito
          'Dez', 'Onze', 'Doze', 'Treze', 'Catorze', 'Quinze', 'Dezesseis', 'Dezessete',
          'Dezoito', 'Dezenove', 'Vinte')
 
-while num < 0 or num > 20:   
+while num < 0 or num > 20 :   
     num=int(input('Digite um numero entre 0 e 20:'))
 
 print(f'Voce digitou o numero {numext[num]}')
