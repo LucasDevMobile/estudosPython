@@ -1,10 +1,7 @@
-tupla = ('arthur', 'lucas', 'ana', 'sergio', 'larissa', 'marcia', 'rodrigo', 'lauane', 'alice', 'noah', 'danilo')
+valores= []
 
-vogais = 'aeiou'
-
-for palavra in tupla:
-    print(f'Na palavra {palavra} temos as vogais:', end=' ')
-    for letra in palavra:
-        if letra.lower() in vogais:
-            print(letra, end=' ')
-    print()  # Pular para a próxima linha após imprimir as vogais de uma palavra
+for cont in range(0,5):
+    valores.append(int(input('Digite um valor')))
+    
+for posicao, valor in enumerate(valores):
+    print(f'Na posicao {posicao} encontrei o valor {valor}') 

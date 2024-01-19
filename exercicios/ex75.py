@@ -20,4 +20,25 @@ for c in tupla:
     if c % 2 ==0:
      par+=1
 print(f'A quantidade de numeros pares foi {par}')
+
+#outra forma:
+
+num=int(input('Digite o primeiro numero:')),
+int(input('Digite o primeiro numero:')),
+int(input('Digite o primeiro numero:')),
+int(input('Digite o primeiro numero:'))
+
+print(f'O numero nove apareceu {num.count(9)}x')
+
+if 3 in num:
+    print(f'O numero 3 foi digitado na posicao {num.index(3)}')
+else:print('O numero 3 nao foi digitado')
+
+print('Os valores pares digitados foram ',end='')
+
+for n in num:
+    if n% 2 ==0:
+        print(n, end='')
+
+
      
