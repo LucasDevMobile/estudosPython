@@ -1,13 +1,15 @@
-from random import randint
 
-# Lista para armazenar os 5 números aleatórios
-numeros = [randint(1, 100) for _ in range(5)]
+n1=int(input('digite um numero'))
+n2=int(input('digite um numero'))
+n3=int(input('digite um numero'))
+n4=int(input('digite um numero'))
 
-# Exibe os números antes de ordenar
-print("Números antes de ordenar:", numeros)
+tupla=(n1,n2,n3,n4)
 
-# Ordena a lista
-numeros_ordenados = sorted(numeros)
 
-# Exibe os números ordenados
-print("Números ordenados:", numeros_ordenados)
+print(f'O numero 9 apareceu {tupla.count(9)}x')
+print(f'O primeiro valor 3 foi digitado na posicao:{tupla.index(3)}')
+
+if tupla %2 == 0:
+    tupla+=1
+    print(tupla) 
