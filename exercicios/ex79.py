@@ -1,3 +1,6 @@
+# crie um programa onde o usuario possa digitar valores numericos e cadastre os em uma lista
+#caso o numero ja exista ele nao sera adicionado,no final mostras todos valores em ordem crescente
+
 lista = []
 
 while True:
@@ -15,3 +18,6 @@ while True:
 
 lista.sort()
 print(f'Valores em ordem crescente: {lista}')
+
+    
+    
