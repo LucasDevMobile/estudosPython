@@ -1,15 +1,8 @@
+valores= []       
+valores.append(5)           
+valores.append(9)           # adiciona valores a lista
+valores.append(4)
 
-n1=int(input('digite um numero'))
-n2=int(input('digite um numero'))
-n3=int(input('digite um numero'))
-n4=int(input('digite um numero'))
-
-tupla=(n1,n2,n3,n4)
-
-
-print(f'O numero 9 apareceu {tupla.count(9)}x')
-print(f'O primeiro valor 3 foi digitado na posicao:{tupla.index(3)}')
-
-if tupla %2 == 0:
-    tupla+=1
-    print(tupla) 
+for posicao, valor in enumerate(valores):
+    print(f'Na posicao {posicao} encontrei o valor {valor}')    #printa a posicao e o valor de cada numero da lista
+    
