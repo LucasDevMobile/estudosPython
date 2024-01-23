@@ -1,13 +1,15 @@
-#crie um programa para inserir 5 valores em ordem 
+#crie um programa para inserir 5 valores em ordem
 
 lista=[]
 
-while True:
-    valor=int(input('Digite um valor:'))
+valor=int(input('Digite um valor:'))
+lista.append(valor)
+valor=int(input('Digite um valor:'))
+lista.append(valor)
+
+valor=int(input('Digite um valor:'))
+
+if valor < max(lista) in lista:
     lista.insert(0,valor)
     
-        
-        
-        
-        
-    print(lista)
+print(lista)
