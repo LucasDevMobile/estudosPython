@@ -1,19 +1,38 @@
-galera=[]                    # cria uma lista
-dados=[]                     # cria uma lista para pegar os dados temporariamente
-totalmaior = totalmenor=0
-for cont in range (0,3):     
-    dados.append(str(input('Nome: ')))      # le o nome e a idade e joga na lista dados
-    dados.append(int(input('idade: ')))
-    galera.append(dados[:])                 # faz uma copia de dados na lista galera 
-    dados.clear()                           # limpa a lista dados
+total = 0
+pessoas = []
+mais_pesadas = []
+mais_leves = []
+
+while True:
+    nome = input('Digite seu nome: ')
+    peso = float(input('Digite seu peso: '))
     
-for pessoa in galera:                       # faz a checagem da lista galera
-    if pessoa[1] >=21:                      # faz a comparacao da pessoa[1] ou seja a idade  nome[0] idade [1]
-        print(f'{pessoa[0]} eh maior de idade')
-        totalmaior+=1
-    else:
-        print(f'{pessoa[0]} eh menor de idade')
-        totalmenor+=1
-        
-print(f'A quantidade de pessoas maiores foi {totalmaior}')
-print(f'A quantidade de pessoas menores foi {totalmenor}')
+    pessoas.append((nome, peso))
+    total += 1
+
+    continuar = input('Você deseja continuar? [S/N] ').upper()
+    if continuar != 'S':
+        break
+
+# Inicializar variáveis para armazenar o maior e o menor peso
+maior_peso = float('-inf')
+menor_peso = float('inf')
+
+# Encontrar as pessoas mais pesadas e mais leves usando if
+for pessoa in pessoas:
+    if pessoa[1] > maior_peso:
+        mais_pesadas = [pessoa]
+        maior_peso = pessoa[1]
+    elif pessoa[1] == maior_peso:
+        mais_pesadas.append(pessoa)
+    
+    if pessoa[1] < menor_peso:
+        mais_leves = [pessoa]
+        menor_peso = pessoa[1]
+    elif pessoa[1] == menor_peso:
+        mais_leves.append(pessoa)
+
+print(f'Foram cadastradas {total} pessoas.')
+print(f'As pessoas mais pesadas são: {mais_pesadas}')
+print(f'As pessoas mais leves são: {mais_leves}')
+``
