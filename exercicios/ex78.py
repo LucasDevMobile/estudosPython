@@ -9,9 +9,11 @@ lista.append(int(input('Digite o segundo numero:'))),
 lista.append(int(input('Digite o terceiro numero:'))),
 lista.append(int(input('Digite o quarto numero:'))),
 lista.append(int(input('Digite o quinto numero:')))
+
 maior=max(lista)
+menor=min(lista)
 
 print(f'Os numeros digitados foram {lista}')
 
-print(f'O maior valor digitado foi {max(lista)} na posicao {lista.index(maior)}')
+print(f'O maior valor digitado foi {max(lista)} na posicao {lista.index(maior)} e o menor foi {min(lista)} na posicao {lista.index(menor)}')
 
