@@ -15,12 +15,12 @@ idade=date.today().year - pessoa["nascimento"]
 pessoa['idade']=idade
 
 if pessoa['ctps'] != 0:
-    pessoa['Ano contratacao']=int(input('Digite o ano que foi contratado'))
+    pessoa['Ano contratacao']=int(input('Digite o ano que foi contratado:'))
     pessoa['salario']=float(input('Digite seu salario:'))
     
-aposentadoria=pessoa["Ano contratacao"]+ 35 - date.today().year
+aposentadoria=pessoa["Ano contratacao"]+ 35 - date.today().year + idade
     
 
 
 
-print(f'{pessoa["nome"]} tem {idade} anos e vai se aposentar em {aposentadoria} anos ')
+print(f'{pessoa["nome"]} tem {idade} anos e vai se aposentar com {aposentadoria} anos ')
