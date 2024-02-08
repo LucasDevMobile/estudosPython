@@ -1,3 +1,6 @@
+#crie um programa onde 4 jogadores joguem um dado
+#no final mostre o resultado de todos e qual foi o vencedor
+
 from random import randint
 
 # Resultados dos dados para cada jogador
