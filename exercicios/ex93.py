@@ -13,3 +13,20 @@
 #na partida 0 fez 3 gols
 #na partida 1 fez 0 gols....etc
 
+desempenho = {}
+golss=0
+desempenho ['nome']=str(input('Digite o nome do jogador:'))
+desempenho ['partidas']=int(input('Digite a quantidade de partidas:'))
+
+for gol in desempenho.values():
+
+
+
+
+
+
+
+
+
+
+    print(desempenho)
