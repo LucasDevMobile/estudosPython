@@ -14,19 +14,29 @@
 #na partida 1 fez 0 gols....etc
 
 desempenho = {}
-golss=0
+gols=[]
 desempenho ['nome']=str(input('Digite o nome do jogador:'))
-desempenho ['partidas']=int(input('Digite a quantidade de partidas:'))
+partidas=int(input('Digite a quantidade de partidas:'))
 
-for gol in desempenho.values():
+for gol in range (partidas):
+    
+    gols.append(int(input(f'Digite a quantidade de gols na partida {gol} :')))
+print()
+        
+desempenho['gols']=gols
 
+total=sum(gols)
+    
+print(f'{desempenho} total {total} gols')
+print()
+print(f'O campo nome tem o valor {desempenho["nome"]}')
+print(f'O campo gols tem o valor {desempenho["gols"]}')
+print(f'O campo total tem o valor {total}')
+print()
+print(f'O jogador {desempenho["nome"]} jogou {partidas} partidas')
+print()
 
-
-
-
-
-
-
-
-
-    print(desempenho)
+for c,g in enumerate (gols):
+       
+    print(f'Na partida {c} {desempenho["nome"]} fez {g} gols')
+    
