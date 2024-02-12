@@ -10,3 +10,4 @@ print(pessoas.items())
 lista.append(pessoas.copy())
 print(lista)
 
+SUB2GAMERROBOT_RESET1
