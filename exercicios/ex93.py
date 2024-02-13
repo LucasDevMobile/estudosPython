@@ -15,6 +15,7 @@
 
 desempenho = {}
 gols=[]
+print()
 desempenho ['nome']=str(input('Digite o nome do jogador:'))
 partidas=int(input('Digite a quantidade de partidas:'))
 
