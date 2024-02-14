@@ -10,7 +10,8 @@ pessoas={}
 mulheres=[]
 idade=[]
 acima=[]
-media=1
+
+
 while True:
     
     pessoas ['nome']=str(input('Digite seu nome:'))
@@ -26,10 +27,11 @@ while True:
     cadastro.append(pessoas.copy())
     
     idade.append(pessoas['idade'])
-     
-    media=int(sum(idade)/(len(cadastro)))
+    
+    media=sum(idade)/(len(cadastro))
 
-    if pessoas['idade'] > media:
+   
+    if cadastro[0]["idade"] > media:
         acima.append(pessoas.copy())
     
     if pessoas['sexo']=='F':
