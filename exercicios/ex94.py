@@ -34,7 +34,7 @@ while True:
     if continuar not in 'S':
         break
  
-media=sum(idade)/(len(cadastro))
+media=int(sum(idade)/(len(cadastro)))
 
 for pessoa in cadastro:
     if pessoa['idade'] > media:
