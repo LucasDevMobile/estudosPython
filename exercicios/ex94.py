@@ -10,6 +10,7 @@ pessoas={}
 mulheres=[]
 idade=[]
 acima=[]
+
 while True:
     
     pessoas ['nome']=str(input('Digite seu nome:'))
@@ -20,17 +21,11 @@ while True:
         pessoas ['sexo']=str(input('Digite seu sexo (M/F)')).upper()
           
     pessoas ['idade']=int(input('Digite sua idade:'))
-    
-    if pessoas['sexo'] not in 'M':
-        print('ERRO, digite M ou F para o sexo')
-         
+          
     cadastro.append(pessoas.copy())
     
     idade.append(pessoas['idade'])
      
-    media=sum(idade)/(len(cadastro))
-    if pessoas['idade']>media:
-        acima.append(pessoas.copy())
     
     if pessoas['sexo']=='F':
         mulheres.append(pessoas.copy())
@@ -38,7 +33,13 @@ while True:
     continuar=str(input('Deseja continuar? S/N:')).upper()
     if continuar not in 'S':
         break
-    
+ 
+media=sum(idade)/(len(cadastro))
+
+for pessoa in cadastro:
+    if pessoa['idade'] > media:
+        acima.append(pessoa)
+   
 print()   
 print(f'Lista de pessoas cadastradas {cadastro}')
 print() 
