@@ -1,13 +1,13 @@
-pessoas = {'nome':'Lucas','idade':35,'sexo':'M'}
 
+def linha():
+    nome=str(input('digite seu nome'))
+    nome=str(input('digite seu nome'))
+    nome=str(input('digite seu nome'))
+    nome=str(input('digite seu nome'))
+    nome=str(input('digite seu nome'))
+    nome=str(input('digite seu nome'))
+    nome=str(input('digite seu nome'))
+    nome=str(input('digite seu nome'))
+    
 
-lista=[]
-
-print(pessoas.keys())
-print(pessoas.values())
-print(pessoas.items())
-
-lista.append(pessoas.copy())
-print(lista)
-
-SUB2GAMERROBOT_RESET1
+linha()
