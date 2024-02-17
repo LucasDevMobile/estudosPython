@@ -50,13 +50,19 @@ while True:
         break
 print()
 
-jogador=str(input('De qual jogador voce deseja saber os dados? '))
+while True:
+    jogador=str(input('De qual jogador voce deseja saber os dados? '))
 
-for c in time:
-    if c['nome'] == jogador:
-        print(c)
-    if jogador != c:
-        print('Este jogador nao esta noa time')
+    for c in time:
+        if c['nome'] == jogador:
+            print(c)
+    if jogador not in c['nome']:
+            print('Este jogador nao esta no time')
+            
+        
+        
+            
+
 
 
 
