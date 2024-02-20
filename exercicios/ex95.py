@@ -24,6 +24,7 @@
 desempenho = {}
 time= []
 gols=[]
+gols2=[]
 
 while True:
 
@@ -40,7 +41,7 @@ while True:
     total=sum(gols)
 
     desempenho['total']=total
-
+    gols2=gols.copy()
     gols.clear()
 
     time.append(desempenho.copy())
@@ -49,15 +50,22 @@ while True:
     if continuar not in 'S':
         break
 print()
+print(f'Esse eh o time{time}')
+print()
 
 while True:
-    jogador=str(input('De qual jogador voce deseja saber os dados? '))
+    jogador = input('De qual jogador voce deseja saber os dados? Digite 999 para parar: ')
+    
+    if jogador == '999':
+        break
 
     for c in time:
         if c['nome'] == jogador:
             print(c)
-    if jogador not in c['nome']:
-            print('Este jogador nao esta no time')
+            for k, v in enumerate(c['gols']):
+                print(f'Na partida {k} {c["nome"]} fez {v} gols')
+
+    
             
         
         
